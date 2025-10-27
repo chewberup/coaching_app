@@ -69,8 +69,8 @@ let seconds = 0;
 
 // 문제 + 정답 등록
 const questionData = {
-  korean: {
-    easy: [
+  math: {
+    medium: [
       { img: 'images/korean/1.jpg', answer: '가' },
       { img: 'images/math/medium/1.jpg', answer: '3' },
       { img: 'images/math/medium/2.jpg', answer: '3' },
@@ -158,4 +158,5 @@ function formatTime(sec) {
   const s = String(sec % 60).padStart(2, '0');
   return `${m}:${s}`;
 }
+
 
