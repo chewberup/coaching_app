@@ -71,9 +71,17 @@ let seconds = 0;
 const questionData = {
   korean: {
     easy: [
-      { img: 'images/korean/easy1.jpg', answer: '가' },
-      { img: 'images/korean/easy2.jpg', answer: '나' },
-      { img: 'images/korean/easy3.jpg', answer: '다' },
+      { img: 'images/korean/1.jpg', answer: '가' },
+      { img: 'images/math/medium/1.jpg', answer: '3' },
+      { img: 'images/math/medium/2.jpg', answer: '3' },
+      { img: 'images/math/medium/3.jpg', answer: '1' },
+      { img: 'images/math/medium/4.jpg', answer: '4' },
+      { img: 'images/math/medium/5.jpg', answer: '1' },
+      { img: 'images/math/medium/6.jpg', answer: '1' },
+      { img: 'images/math/medium/7.jpg', answer: '5' },
+      { img: 'images/math/medium/8.jpg', answer: '5' },
+      { img: 'images/math/medium/9.jpg', answer: '2' },
+      { img: 'images/math/medium/10.jpg', answer: '3' },
     ]
   }
 };
@@ -150,3 +158,4 @@ function formatTime(sec) {
   const s = String(sec % 60).padStart(2, '0');
   return `${m}:${s}`;
 }
+
