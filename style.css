@@ -19,12 +19,12 @@ body {
 
 /* 메인 컨테이너 */
 .main-container {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.95);
   padding: 50px;
   border-radius: 25px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   width: 90%;
-  max-width: 600px;
+  max-width: 650px;
   animation: float 2s ease-in-out infinite alternate;
 }
 
@@ -35,26 +35,27 @@ body {
 
 /* 제목 */
 .app-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #2b2b2b;
   margin-bottom: 20px;
 }
 
 /* 설명문 */
 .app-desc {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: #444;
   margin-bottom: 40px;
   line-height: 1.6;
 }
 
-/* 버튼 */
+/* 버튼 그리드 */
 .button-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
 
+/* 버튼 스타일 */
 button {
   padding: 15px;
   font-size: 18px;
@@ -68,7 +69,7 @@ button {
 
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
 }
 
 /* 푸터 */
@@ -87,19 +88,40 @@ footer {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 시험 페이지용 */
+/* 시험 페이지용 영역 */
 #exam-area {
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
+/* 문제 이미지 크게 */
+#question-img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+/* 정답 입력창 크게 & 강조 */
 #answer-input {
-  width: 80%;
-  max-width: 400px;
-  font-size: 1.2rem;
-  padding: 10px;
+  width: 90%;
+  max-width: 500px;
+  font-size: 1.5rem;
+  padding: 15px;
   margin: 20px 0;
-  border-radius: 8px;
-  border: 2px solid #ccc;
+  border-radius: 10px;
+  border: 3px solid #2193b0;
+  transition: border 0.2s, box-shadow 0.2s;
 }
+
+#answer-input:focus {
+  outline: none;
+  border-color: #1a8cff;
+  box-shadow: 0 0 10px rgba(26,140,255,0.4);
+}
+
+/* 정답 입력 시 효과 */
 .correct {
   animation: correctFlash 0.4s ease;
 }
@@ -107,3 +129,23 @@ footer {
   0% { background-color: #a0f0a0; }
   100% { background-color: white; }
 }
+
+/* 숨김 클래스 */
+.hidden {
+  display: none;
+}
+
+/* 난이도 선택 버튼 */
+.button-grid button {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* 시험 타이머 */
+#timer {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
