@@ -1,0 +1,109 @@
+/* 전체 배경 & 기본 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pretendard', sans-serif;
+  color: #333;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+/* 메인 배경 효과 */
+.main-bg {
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 메인 컨테이너 */
+.main-container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 600px;
+  animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-8px); }
+}
+
+/* 제목 */
+.app-title {
+  font-size: 2rem;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+/* 설명문 */
+.app-desc {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* 버튼 */
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* 푸터 */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* fade 효과 */
+.fade-in {
+  animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 시험 페이지용 */
+#exam-area {
+  margin-top: 20px;
+}
+#answer-input {
+  width: 80%;
+  max-width: 400px;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+.correct {
+  animation: correctFlash 0.4s ease;
+}
+@keyframes correctFlash {
+  0% { background-color: #a0f0a0; }
+  100% { background-color: white; }
+}
