@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>코칭앱 메인</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="main-bg">
+  <div class="main-container">
+    <h1 class="app-title">📘 코칭앱에 오신 걸 환영합니다!</h1>
+    <p class="app-desc">
+      이 앱은 학생들이 수행평가와 지필고사를 쉽고 효율적으로 준비할 수 있도록 돕기 위해 만들어졌습니다.<br>
+      과목별 맞춤 문제와 학습 자료를 통해 스스로 공부할 수 있어요.
+    </p>
+
+    <div class="button-grid fade-in">
+      <button onclick="goToSubject('korean')">국어</button>
+      <button onclick="goToSubject('english')">영어</button>
+      <button onclick="goToSubject('math')">수학</button>
+      <button onclick="goToSubject('science')">과학</button>
+      <button onclick="goToSubject('history')">역사</button>
+    </div>
+
+    <footer>
+      <p>© 2025 Chanhyung Shin. All Rights Reserved.</p>
+      <p>Unauthorized copying or redistribution of this application is prohibited.</p>
+    </footer>
+  </div>
+</body>
+</html>

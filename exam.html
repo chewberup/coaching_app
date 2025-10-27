@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>지필고사 대비</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1 id="exam-title">지필고사 대비</h1>
+
+    <div id="difficulty-select">
+      <p>난이도를 선택하세요</p>
+      <div class="button-grid">
+        <button onclick="startExam('easy')">기초</button>
+        <button onclick="startExam('medium')">중간</button>
+        <button onclick="startExam('hard')">심화</button>
+      </div>
+    </div>
+
+    <div id="exam-area" class="hidden">
+      <p id="timer">⏱ 00:00</p>
+      <img id="question-img" src="" alt="문제">
+      <input type="text" id="answer-input" placeholder="정답을 입력하세요">
+      <div>
+        <button onclick="checkAnswer()">정답 확인</button>
+      </div>
+    </div>
+
+    <button class="back-btn" onclick="goBackToSubject()">← 과목으로</button>
+  </div>
+</body>
+</html>
